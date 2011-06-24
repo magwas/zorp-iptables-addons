@@ -77,6 +77,9 @@ parse_zone_names(const char *zonestring, struct ipt_zone_info_v1 *info, size_t m
 	for (cp=buffer, i=0; cp && i<IPT_ZONE_NAME_COUNT; cp=next,++i) {
 		next=strchr(cp, ',');
 		if (next) *next++='\0';
+
+		while (isspace(*cp)) cp++;
+
 		strncpy((char *)info->names[i], cp, max_length);
 		info->names[i][max_length] = '\0';
 	}
