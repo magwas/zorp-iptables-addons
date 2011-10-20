@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <getopt.h>
 #include <iptables.h>
-#include <linux/netfilter_ipv4/ipt_zone.h>
+#include <linux/netfilter/xt_zone.h>
 
 static void zone_help_v0(void)
 {
@@ -369,7 +369,7 @@ static struct xtables_match zone_match_v0 = {
 
 static struct xtables_match zone_match_v1 = {
 	.name		= "zone",
-	.family		= NFPROTO_IPV4,
+	.family		= NFPROTO_UNSPEC,
 	.revision	= 1,
 	.version	= XTABLES_VERSION,
 	.size		= XT_ALIGN(sizeof(struct ipt_zone_info_v1)),

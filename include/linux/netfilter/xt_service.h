@@ -1,5 +1,5 @@
-#ifndef _IPT_SERVICE_H
-#define _IPT_SERVICE_H
+#ifndef _XT_SERVICE_H
+#define _XT_SERVICE_H
 
 enum {
 	IPT_SERVICE_TYPE_ANY = 0,

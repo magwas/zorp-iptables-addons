@@ -1,5 +1,5 @@
-#ifndef _IPT_ZONE_H
-#define _IPT_ZONE_H
+#ifndef _XT_ZONE_H
+#define _XT_ZONE_H
 
 /* flags */
 enum {

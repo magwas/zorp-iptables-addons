@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <getopt.h>
 #include <iptables.h>
-#include <linux/netfilter_ipv4/ipt_service.h>
+#include <linux/netfilter/xt_service.h>
 
 static void
 service_help(void)
@@ -130,7 +130,7 @@ service_save(const void *ip, const struct xt_entry_match *match)
 
 static struct xtables_match service = {
 	.name		= "service",
-	.family		= NFPROTO_IPV4,
+	.family		= NFPROTO_UNSPEC,
 	.version	= XTABLES_VERSION,
 	.size		= XT_ALIGN(sizeof(struct ipt_service_info)),
 	.userspacesize	= XT_ALIGN(sizeof(struct ipt_service_info)),
