@@ -83,7 +83,7 @@ static void kzorp_tg_save(const void *ip, const struct xt_entry_target *target)
 
 static struct xtables_target kzorp_tg_reg = {
 	.name	         = "KZORP",
-	.family	       = NFPROTO_IPV4,
+	.family	       = NFPROTO_UNSPEC,
 	.version       = XTABLES_VERSION,
 	.size	         = XT_ALIGN(sizeof(struct xt_kzorp_target_info)),
 	.userspacesize = XT_ALIGN(sizeof(struct xt_kzorp_target_info)),
