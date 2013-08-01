@@ -17,7 +17,7 @@
 	prepare-dist)
 		;;
 	bootstrap)
-		#./autogen.sh
+		echo "No need to bootstrap"
 		;;
 	configure)
 		./configure "$@"
