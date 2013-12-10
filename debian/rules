@@ -25,9 +25,9 @@ export DH_OPTIONS
 
 
 %:
-	dh $@  --with autotools-dev --with dkms
+	dh $@  --with autotools-dev
 
 build:
 	autoreconf -i
-	dh $@  --with autotools-dev --with dkms
+	dh $@  --with autotools-dev
 
