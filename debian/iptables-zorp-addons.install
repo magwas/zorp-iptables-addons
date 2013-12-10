@@ -1,2 +1,2 @@
-lib/xtables/libxt_service.so
-lib/xtables/libxt_zone.so
+/usr/lib/xtables/libxt_service.so
+/usr/lib/xtables/libxt_zone.so
