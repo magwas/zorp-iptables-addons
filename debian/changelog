@@ -2,7 +2,7 @@ iptables-addons (1.0-1) unstable; urgency=low
 
   * A bit better debian packaging
 
- -- Árpád Magosányi <mag@balabit.com>  Tue,  10 Dec 2013 10:09:00 +0200
+ -- Árpád Magosányi <mag@balabit.hu>  Tue,  10 Dec 2013 10:09:00 +0200
 iptables-addons (1.0) zorp50; urgency=low
 
   * Initial release.
