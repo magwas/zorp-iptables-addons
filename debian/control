@@ -2,19 +2,19 @@ Source: iptables-addons
 Section: misc
 Priority: optional
 Maintainer: ZorpOS Maintainers <zorpos@balabit.com>
-Standards-Version: 3.2.0
-Build-Depends: iptables-dev, debhelper (>= 7), build-essential, devscripts
+Standards-Version: 3.9.4
+Build-Depends: iptables-dev, debhelper (>= 9), devscripts, autotools-dev
 
 Package: iptables-zorp-addons
 Architecture: any
-Depends: ${shlibs:Depends}, iptables, debconf
+Depends: ${shlibs:Depends}, ${misc:Depends}, iptables, debconf
 Description: Iptables addons for zone and service matches.
  These iptables modules makes it possible to refer to zones and services
  in packet filtering rules.
 
 Package: iptables-kzorp-addon
 Architecture: any
-Depends: ${shlibs:Depends}, iptables, debconf
+Depends: ${shlibs:Depends}, ${misc:Depends}, iptables, debconf
 Description: Iptables addon for Kzorp target
  This iptables module makes it possible to refer to kzorp target
  in packet filtering rules.

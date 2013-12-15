@@ -31,3 +31,6 @@ build:
 	autoreconf -i
 	dh $@  --with autotools-dev
 
+binary-arch:
+	autoreconf -i
+	dh $@  --with autotools-dev
