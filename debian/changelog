@@ -1,3 +1,9 @@
+iptables-addons (1.0.2ubuntu3) quantal; urgency=low
+
+  * pkg-config dependency 
+
+ -- Árpád Magosányi <mag@balabit.hu>  Mon, 16 Dec 2013 16:04:43 +0100
+
 iptables-addons (1.0.2ubuntu2) quantal; urgency=low
 
   * satisfiable iptables dependency 
