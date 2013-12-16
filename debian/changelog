@@ -1,3 +1,9 @@
+iptables-addons (1.0.2ubuntu2) quantal; urgency=low
+
+  * satisfiable iptables dependency 
+
+ -- Árpád Magosányi <mag@balabit.hu>  Mon, 16 Dec 2013 15:47:33 +0100
+
 iptables-addons (1.0.2ubuntu1) quantal; urgency=low
 
   * binary-only build should build now 

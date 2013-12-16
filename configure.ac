@@ -18,7 +18,7 @@ fi
 
 AC_CHECK_HEADERS([linux/netfilter/x_tables.h], [],
 	[AC_MSG_ERROR([You need to have linux/netfilter/x_tables.h])])
-PKG_CHECK_MODULES([libxtables], [xtables >= 1.4.5])
+PKG_CHECK_MODULES([libxtables], [xtables >= 1.4.0])
 
 ADDONS_DIR="${prefix}/lib/xtables"
 
