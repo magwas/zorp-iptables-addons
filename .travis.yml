@@ -1,12 +1,14 @@
 before_install:
-  - sudo apt-add-repository -y "deb http://ppa.launchpad.net/mag-magwas/zorp/ubuntu quantal main"
-  - sudo apt-get update -qq
-  - sudo apt-get install debhelper autotools-dev iptables-dev build-essential devscripts dh-autoreconf
+- sudo apt-add-repository -y "deb http://ppa.launchpad.net/mag-magwas/zorp/ubuntu
+  quantal main"
+- sudo apt-get update -qq
+- sudo apt-get install debhelper autotools-dev iptables-dev build-essential devscripts
+  dh-autoreconf
 script:
-  - debuild -i -us -uc -b
-  - sudo dpkg -i ../*.deb
-  - git clone https://github.com/magwas/zorp.git -b identity ../identity
-  - ../identity/buildForLaunchpad
+- debuild -i -us -uc -b
+- sudo dpkg -i ../*.deb
+- git clone https://github.com/magwas/zorp.git -b identity ../identity
+- ../identity/buildForLaunchpad
 env:
   global:
-    secure: XwErEg7IDcwaUF40zMYimruxZNTKPpb7Gz/qCk7Ejwssyns4N/4F9yLqY6JEYI1jPY5QAm5m6/HnHjbC3hfiIaOsKEANCeqL4zNbKCOzg+Sa9bU0/HRoH1soAf2SGJi4o3hnTCbKJ7jTH+HIiqWpcSaQs+xiOWn290dDtZX8x1Y=
+    secure: NBzuXBu9YQpeQDQz73T+WuAs5Rc6pvkEikZNcw4Nq62BzPh566S4y4RnIaCVblJpRblC8gBUYuOuHLlXPOftxMnFrI97D9iSF2Lj+RGPidaBKyPRby8V4YoA/nv6+aiGiMFXB7RO9mWkDeCQe0VJVF2+GNDSJRxEx/YqfD0iS+8=
